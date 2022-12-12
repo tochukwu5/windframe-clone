@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+
+/* FOR NAVBAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   }
+   body {
+    font-family: sans-serif;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    color: #000;
+    
+   }
+   .nav-links a {
+    color: #000;
+   }
+   /* LOGO */
+   .logo {
+    color: red;
+    overflow: hidden;
+    width: 27px;
+   }
+   .logo img {
+    width: 100%;
+    
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    background: #fff;
+    z-index: 1000;;
+   }
+   .menu li:hover {
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 3px;
+    font-size: 0.95rem;
+    font-weight: 600;
+   }
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+    .navbar{
+        padding-left: 35px;
+        margin-top: 20px;
+    }
+   .menu { 
+    display:none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 16px 12px;
+
+   }
+   .menu li{
+    font-size: 0.84rem;
+    font-weight: 600;
+    margin-left: 20px;
+   }
+   .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+    color: black;
+    margin-left: 80px;
+
+   }
+}
+    /* NAVBAR ENDS */
+
+.hid{
+    display: none;
+}
+.okk{
+    margin-right: 50px !important;
+    margin-top: 40px;
+}
+
+.btn-join {
+    margin: 20px 10px;
+    padding: 9px 20px;
+    border: none;
+    background: rgb(204, 201, 255);
+    box-shadow: rgb(75 93 104 / 10%) 0px 5px 5px;
+    border-radius: 5px;
+    color: rgb(51, 41, 224);
+    font-weight: 800;
+    cursor: pointer !important;
+    
+}
