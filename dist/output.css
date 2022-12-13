@@ -645,6 +645,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -719,14 +723,6 @@ video {
 
 .ml-6 {
   margin-left: 1.5rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-8 {
-  margin-right: 2rem;
 }
 
 .block {
@@ -1433,7 +1429,7 @@ input[type=checkbox]{
 
 .msg{
   bottom: 50px;
-  right: 20px;
+  right: 5px;
   position: fixed;
 }
 

@@ -136,6 +136,6 @@ input[type=checkbox]{
 }
 .msg{
     bottom: 50px;
-    right: 20px;
+    right: 5px;
     position: fixed;
 }
