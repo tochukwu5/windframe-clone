@@ -134,3 +134,8 @@ input[type=checkbox]{
     cursor: pointer !important;
     
 }
+.msg{
+    bottom: 50px;
+    right: 20px;
+    position: fixed;
+}
